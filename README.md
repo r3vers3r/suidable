@@ -22,7 +22,7 @@ Thanks from heart to **GTFOBINS (https://gtfobins.github.io/) creators Emilio Pi
 **2.** The first thing to be done before every use, is to execute the script followed by **-u** parameter to make sure the data that will be used to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation.
 
 ````
-./suidable -u
+./suidable.sh -u
 ````
 
 **2.1** In case there isn't any previously existing data, the tool will notice it and the downloadof all necessary files will automatically start.
@@ -40,7 +40,7 @@ Thanks from heart to **GTFOBINS (https://gtfobins.github.io/) creators Emilio Pi
 **3.** Once you made sure to have all dependencies up to date, it is time to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation. This can be done executing the tool followed by parameter **-s**
 
 ````
-./suidable -s
+./suidable.sh -s
 ````
 
 **3.1** In case of positive findings, the tool will let you know which are these binaries.
