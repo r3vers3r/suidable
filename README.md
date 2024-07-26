@@ -1,6 +1,6 @@
 # SUIDABLE
 
-## What is it?
+## WHAT IS IT?
 
 **SUIDABLE** is a simple Bash script that is thought to be sent to a Linux victim machine once this is compromised and foothold is gained. This tool checks on an automated way if any of the binaries that is present on the system and counts with an SUID bit set is included on GTFOBINS as a binary that might lead to a user pivoting or privilege escalation. The aim of this tool is to save some precious time to its user. Time that would be otherwise lost checking each binary with an SUID bit set one by one.
 
