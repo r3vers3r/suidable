@@ -10,15 +10,16 @@ Thanks from heart to **GTFOBINS (https://gtfobins.github.io/) creators Emilio Pi
 
 ## HOW DOES IT WORK?
 
-**1.** In case you execute the tool without any parameter the help panel will display with
+**1.** In case you execute the tool without any parameter the help panel will display with. This same panel can be shown executing the tool followed by parameter **-h**
 
 ````
 ./suidable.sh
 ````
 
-![image](https://github.com/user-attachments/assets/c3033ae7-1dc5-4f2f-b52b-08e624b62cf5)
+![image](https://github.com/user-attachments/assets/240e9bc2-1fc7-4b06-9ac4-84ee842bd4be)
 
-**2.** The first thing to be done before every use, is to execute the script followed by the **-u** parameter to make sure the data that will be used to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation.
+
+**2.** The first thing to be done before every use, is to execute the script followed by **-u** parameter to make sure the data that will be used to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation.
 
 ````
 ./suidable -u
@@ -36,7 +37,7 @@ Thanks from heart to **GTFOBINS (https://gtfobins.github.io/) creators Emilio Pi
 
 ![Captura de pantalla 2024-07-25 231604](https://github.com/user-attachments/assets/4a1cc376-df0f-48bd-aba5-19ca74562eb4)
 
-**3.** Once you made sure to have all dependencies up to date, it is time to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation.
+**3.** Once you made sure to have all dependencies up to date, it is time to check if any of the SUID binaries present on the system can lead to a user pivoting or a privilege escalation. This can be done executing the tool followed by parameter **-s**
 
 ````
 ./suidable -s
