@@ -84,7 +84,7 @@ function suidMatcher(){
   tput civis
   echo -e "\n${purpleColor}[+]${endColor}${blueColor} Cheking if any of the binaries present on the current system counts with a binary SUID bit set that may lead to a user pivoting or privilege escalation...${endColor}\n"
   cat gtfobins.html | grep "suid" | awk "/aa-exec/,/zsoelim/" | grep -v "Limited" | cut -d '/' -f 3 > temp_vulnerable_suid.txt
-  find /usr/bin/ /usr/sbin -type f -perm -4000 | cut -d '/' -f 4 > temp_system_suid.txt
+  find /bin /sbin /usr/bin/ /usr/sbin /usr/local/bin -type f -perm -4000 | cut -d '/' -f 4 > temp_system_suid.txt
   suid_matcher="$(grep -x -Ff temp_vulnerable_suid.txt temp_system_suid.txt)"
   tput cnorm
   if [ $suid_matcher ]; then
